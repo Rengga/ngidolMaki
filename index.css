@@ -119,8 +119,9 @@ button:hover {
   background: linear-gradient(aqua, blueviolet);
   border-radius: 20px 0 0 20px;
   height: 100%;
-  width: 80%;
+  width: 100%;
   z-index: -1;
+  transform: translateX(180px);
 }
 .social-links {
   text-align: center;
