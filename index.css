@@ -46,12 +46,16 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
   font-size: 18px;
   font-family: "Fuzzy Bubbles", cursive;
 }
 nav ul li a:hover {
+<<<<<<< HEAD
   color: black;
+=======
+  color: #025f5a;
+>>>>>>> ca83914dff5495f336c1b3125f34418fecd73c50
 }
 .row {
   display: flex;
@@ -201,10 +205,13 @@ button:hover {
     flex-basis: 100%;
   }
   .col-1 h2 {
-    font-size: 35px;
+    font-size: 60px;
   }
   .col-1 h3 {
-    font-size: 16px;
+    font-size: 30px;
+  }
+  .col-1 p{
+    font-size: 21px;
   }
   .color-box {
     transform: translateX(180px);
