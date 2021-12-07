@@ -51,7 +51,7 @@ nav ul li a {
   font-family: "Fuzzy Bubbles", cursive;
 }
 nav ul li a:hover {
-  color: #3c5186;
+  color: black;
 }
 .row {
   display: flex;
@@ -66,17 +66,17 @@ nav ul li a:hover {
 }
 .col-1 h2 {
   font-size: 54px;
-  color: #3c5186;
+  color: white;
 }
 .col-1 h3 {
   font-size: 30px;
-  color: #3c5186;
+  color: white;
   font-weight: 100;
   margin: 20px 0 10px 0;
 }
 .col-1 p {
   font-size: 16px;
-  color: #3c5186;
+  color: white;
   font-weight: 100;
 }
 .col-1 h4 {
@@ -169,7 +169,7 @@ button:hover {
     margin-bottom: 10px;
   }
   nav ul li a {
-    color: #3c5186;
+    color: white;
   }
   .logo {
     margin-top: 20px;
