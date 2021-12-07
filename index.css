@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+
 .container {
   width: 100%;
   min-height: 100vh;
@@ -11,18 +13,27 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+body {
+  background: url(image/bg.webp) no-repeat fixed center;
+  background-size: cover;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 .navbar {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 .logo {
-  width: 50px;
+  width: 160px;
   cursor: pointer;
-  margin: 30px 0;
+  margin-top: 30px;
 }
 .menu {
-  width: 25px;
+  cursor: pointer;
+  display: none;
 }
 nav {
   flex: 1;
@@ -35,17 +46,18 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: black;
-  font-size: 14px;
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: "Fuzzy Bubbles", cursive;
 }
 nav ul li a:hover {
-  color: blueviolet;
+  color: #3c5186;
 }
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0;
+  margin: 18px 0;
 }
 .col-1 {
   flex-basis: 40%;
@@ -54,16 +66,17 @@ nav ul li a:hover {
 }
 .col-1 h2 {
   font-size: 54px;
+  color: #3c5186;
 }
 .col-1 h3 {
   font-size: 30px;
-  color: aqua;
+  color: #3c5186;
   font-weight: 100;
   margin: 20px 0 10px 0;
 }
 .col-1 p {
   font-size: 16px;
-  color: goldenrod;
+  color: #3c5186;
   font-weight: 100;
 }
 .col-1 h4 {
@@ -76,7 +89,7 @@ button {
   padding: 12px 10px;
   outline: none;
   color: white;
-  background: linear-gradient(to right, aqua, blueviolet);
+  background: linear-gradient(to right, #1db9c3, #63b4b8);
   border-radius: 6px;
   cursor: pointer;
   transition: width 0.5s;
@@ -92,42 +105,108 @@ button:hover {
   width: 160px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.col-1::after {
+/* .col-1::after {
   content: "";
-  width: 10px;
-  height: 56%;
-  background: linear-gradient(aqua, blueviolet);
+  width: 128px;
+  height: 128px;
+  background:#CDF0EA;
   position: absolute;
   left: -40px;
-  top: 7px;
-}
+  top: 1px;
+  z-index: -1;
+} */
 .col-2 {
   position: relative;
   flex-basis: 60%;
   display: flex;
   align-items: center;
 }
+
 .col-2 .gambar {
   width: 90%;
 }
-.color-box {
+.gambar-box {
   position: absolute;
   right: 0;
   top: 0;
-  background: linear-gradient(aqua, blueviolet);
-  border-radius: 20px 0 0 20px;
+  box-shadow: white 0px 10px 0px 0px inset;
+  border-radius: 400px 0 0 20px;
   height: 100%;
   width: 100%;
   z-index: -1;
   transform: translateX(180px);
+  background: linear-gradient(to right, #1db9c3, #63b4b8);
+  background-image: linear-gradient(to right, rgba(0, 161, 179, 0.8) 0%, rgba(0, 161, 179, 0.1) 100%), url(image/gambar2.webp);
+  background-size: cover;
 }
 .social-links {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
 .social-links svg {
   height: 50px;
   margin: 20px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#1db9c3, #63b4b8);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: #3c5186;
+  }
+  .logo {
+    margin-top: 20px;
+    width: 140px;
+  }
+  .menu {
+    display: block;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .row {
+    flex-direction: column-reverse;
+    margin: 50 px 0;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .col-2 .gambar {
+    width: 10%;
+  }
+  .gambar-box {
+    transform: translateX(70px);
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 35px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+  .color-box {
+    transform: translateX(180px);
+  }
 }
