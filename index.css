@@ -46,12 +46,12 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
   font-size: 18px;
   font-family: "Fuzzy Bubbles", cursive;
 }
 nav ul li a:hover {
-  color: #3c5186;
+  color: #025f5a;
 }
 .row {
   display: flex;
@@ -66,17 +66,17 @@ nav ul li a:hover {
 }
 .col-1 h2 {
   font-size: 54px;
-  color: #3c5186;
+  color: white;
 }
 .col-1 h3 {
   font-size: 30px;
-  color: #3c5186;
+  color: white;
   font-weight: 100;
   margin: 20px 0 10px 0;
 }
 .col-1 p {
   font-size: 16px;
-  color: #3c5186;
+  color: white;
   font-weight: 100;
 }
 .col-1 h4 {
@@ -169,7 +169,7 @@ button:hover {
     margin-bottom: 10px;
   }
   nav ul li a {
-    color: #3c5186;
+    color: white;
   }
   .logo {
     margin-top: 20px;
@@ -201,10 +201,13 @@ button:hover {
     flex-basis: 100%;
   }
   .col-1 h2 {
-    font-size: 35px;
+    font-size: 60px;
   }
   .col-1 h3 {
-    font-size: 15px;
+    font-size: 30px;
+  }
+  .col-1 p {
+    font-size: 20px;
   }
   .color-box {
     transform: translateX(180px);
