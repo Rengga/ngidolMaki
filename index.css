@@ -51,11 +51,7 @@ nav ul li a {
   font-family: "Fuzzy Bubbles", cursive;
 }
 nav ul li a:hover {
-<<<<<<< HEAD
-  color: black;
-=======
   color: #025f5a;
->>>>>>> ca83914dff5495f336c1b3125f34418fecd73c50
 }
 .row {
   display: flex;
@@ -210,7 +206,7 @@ button:hover {
   .col-1 h3 {
     font-size: 30px;
   }
-  .col-1 p{
+  .col-1 p {
     font-size: 21px;
   }
   .color-box {
